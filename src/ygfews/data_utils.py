@@ -13,7 +13,8 @@ def load_data(
 
     Args:
         filepath: Path to the data file
-        file_format: File format (csv, json, excel, parquet). If None, inferred from extension.
+        file_format: File format (csv, json, excel, parquet).
+            If None, inferred from extension.
 
     Returns:
         DataFrame containing the loaded data
@@ -56,7 +57,8 @@ def save_data(
     Args:
         df: DataFrame to save
         filepath: Path where the file will be saved
-        file_format: File format (csv, json, excel, parquet). If None, inferred from extension.
+        file_format: File format (csv, json, excel, parquet).
+            If None, inferred from extension.
         **kwargs: Additional arguments passed to the save function
 
     Examples:

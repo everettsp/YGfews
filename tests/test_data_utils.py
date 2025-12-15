@@ -37,9 +37,7 @@ class TestDataUtils:
         save_data(sample_dataframe, filepath, index=False)
         loaded_df = load_data(filepath)
 
-        pd.testing.assert_frame_equal(
-            sample_dataframe, loaded_df, check_dtype=False
-        )
+        pd.testing.assert_frame_equal(sample_dataframe, loaded_df, check_dtype=False)
 
     def test_clean_data_removes_duplicates(self):
         """Test that clean_data removes duplicate rows."""

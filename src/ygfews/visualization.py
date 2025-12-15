@@ -46,7 +46,9 @@ def plot_distribution(
 
     # Set title and labels
     if title is None:
-        title = f"Distribution of {data.name}" if hasattr(data, "name") else "Distribution"
+        title = (
+            f"Distribution of {data.name}" if hasattr(data, "name") else "Distribution"
+        )
     ax.set_title(title, fontsize=14, fontweight="bold")
     ax.set_xlabel("Value", fontsize=12)
     ax.set_ylabel("Density", fontsize=12)
